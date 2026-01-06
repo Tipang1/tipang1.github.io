@@ -1,4 +1,4 @@
-## About me
+## À propos de moi
 ---
-## My projects
-[Insectopia role-playing game utility → Blattes (French name)](https://github.com/Tipang1/Blattes)
+## Mes projets
+[Utilitaire pour le jeu de rôle Insectopia → Blattes](https://github.com/Tipang1/Blattes)
