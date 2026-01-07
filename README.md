@@ -2,5 +2,5 @@
 ---
 ## Mes projets
 [Utilitaire pour le jeu de rôle Insectopia → Blattes](https://github.com/Tipang1/Blattes)<br>
-[Talk-Code → Langage de programmation "naturel"](./Talk-Code.md)<br>
+[Talk-Code → Langage de programmation "naturel"](./)<br>
 <hr>
