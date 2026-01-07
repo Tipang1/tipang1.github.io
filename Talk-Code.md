@@ -106,7 +106,7 @@ Not many for now, but they will grow quickly!
       x is x - 1
    }```
 
-- Here, the program displays `x`, then decreases its value until it reaches 0.
+ - Here, the program displays `x`, then decreases its value until it reaches 0.
 ---
 #### Comparisons:
 Not all comparisons are available yet! Here are the next ones:
