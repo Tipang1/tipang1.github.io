@@ -46,6 +46,7 @@ a {
     border-radius: 6px;
     cursor: pointer;
     font-size: 14px;
+    margin: auto;
 }
 
 .topbar button:hover,
