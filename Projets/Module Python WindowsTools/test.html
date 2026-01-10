@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>WindowsPyTools – Documentation</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0f1115;
+            color: #e6e6e6;
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #7aa2f7;
+        }
+
+        pre, code {
+            background-color: #1a1d23;
+            color: #c0caf5;
+            padding: 6px;
+            border-radius: 4px;
+        }
+
+        pre {
+            padding: 12px;
+            overflow-x: auto;
+        }
+
+        a {
+            color: #7dcfff;
+            text-decoration: none;
+        }
+
+        /* 🔝 Top-right bar */
+        .topbar {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            z-index: 1000;
+        }
+
+        .topbar button,
+        .topbar a {
+            background-color: #1a1d23;
+            color: #e6e6e6;
+            border: 1px solid #2f3549;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .topbar button:hover,
+        .topbar a:hover {
+            background-color: #2a2f45;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 🔝 Top right controls -->
+<div class="topbar">
+    <button id="lang-switch">FR</button>
+
+    <a href="https://github.com/TON_USER/WindowsPyTools" target="_blank">
+        GitHub
+    </a>
+
+    <a href="https://github.com/TON_USER/WindowsPyTools/releases/latest">
+        Download latest
+    </a>
+</div>
+
+<!-- 🇫🇷 FR -->
+<div data-lang="fr">
+    <h1>WindowsPyTools</h1>
+
+    <p>
+        WindowsPyTools est une bibliothèque Python dédiée aux fonctionnalités
+        natives de Windows, sans dépendances externes.
+    </p>
+
+    <h2>Objectifs</h2>
+    <ul>
+        <li>API simple et propre</li>
+        <li>Basée uniquement sur la bibliothèque standard</li>
+        <li>Installation classique via pip</li>
+        <li>Windows-only assumé</li>
+    </ul>
+
+    <h2>Démarrage rapide</h2>
+
+    <pre><code>from WindowsPyTools import DisplayInfo
+
+display = DisplayInfo()
+print(display.get_monitor_count())</code></pre>
+</div>
+
+<!-- 🇬🇧 EN -->
+<div data-lang="en" class="hidden">
+    <h1>WindowsPyTools</h1>
+
+    <p>
+        WindowsPyTools is a Python library dedicated to native Windows features,
+        with no external dependencies.
+    </p>
+
+    <h2>Goals</h2>
+    <ul>
+        <li>Clean and simple API</li>
+        <li>Standard library only</li>
+        <li>Classic pip installation</li>
+        <li>Windows-only by design</li>
+    </ul>
+
+    <h2>Quick start</h2>
+
+    <pre><code>from WindowsPyTools import DisplayInfo
+
+display = DisplayInfo()
+print(display.get_monitor_count())</code></pre>
+</div>
+
+<script>
+    const switchButton = document.getElementById("lang-switch");
+    let currentLang = "fr";
+
+    switchButton.addEventListener("click", () => {
+        currentLang = currentLang === "fr" ? "en" : "fr";
+
+        document.querySelectorAll("[data-lang]").forEach(el => {
+            el.classList.toggle("hidden", el.dataset.lang !== currentLang);
+        });
+
+        switchButton.textContent = currentLang.toUpperCase();
+        document.documentElement.lang = currentLang;
+    });
+</script>
+
+</body>
+</html>
