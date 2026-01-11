@@ -44,3 +44,7 @@ a {
 .hidden {
     display: none;
 }
+
+.reversed-color {
+    filter: invert(1);
+}
