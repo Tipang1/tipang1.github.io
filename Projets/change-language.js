@@ -1,10 +1,11 @@
 const switchButton = document.getElementById("lang-switch");
 const langIcon = document.getElementById("lang-icon");
 
-let currentLang = "fr";
+let currentLang = localStorage.getItem("lang") || "fr";
 
 switchButton.addEventListener("click", () => {
     currentLang = currentLang === "fr" ? "en" : "fr";
+    localStorage.setItem("lang", currentLang);
 
     document.querySelectorAll("[data-lang]").forEach(el => {
         el.classList.toggle("hidden", el.dataset.lang !== currentLang);
