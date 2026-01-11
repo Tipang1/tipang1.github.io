@@ -27,6 +27,20 @@ a {
     text-decoration: none;
 }
 
+.note {
+    background-color: #1f2330;
+    border-left: 4px solid #7aa2f7;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.warning {
+    background-color: #2a1f1f;
+    border-left: 4px solid #f7768e;
+    padding: 10px;
+    margin: 20px 0;
+}
+
 /* 🔝 Top-right bar */
 .topbar {
     position: fixed;
