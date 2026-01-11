@@ -24,3 +24,29 @@
 .topbar a:hover {
     background-color: #2a2f45;
 }
+
+/* GitHub Logo */
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #1a1d23;
+    border: 1px solid #2f3549;
+    border-radius: 6px;
+
+    width: 34px;
+    height: 34px;
+
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    background-color: #2a2f45;
+}
+
+.icon-button img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
