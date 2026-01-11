@@ -11,8 +11,8 @@
 
 <!-- 🔝 Top right controls -->
 <div class="topbar">
-    <button class="icon-button" id="lang-switch" data-tooltip="FR / EN">
-        <img src="./images/French.png">
+    <button class="icon-button tooltip" id="lang-switch" data-tooltip="FR / EN">
+        <img id="lang-icon" src="./images/French.png" alt="🇫🇷">
     </button>
 
     <a class="icon-button"
@@ -82,6 +82,8 @@ print(display.get_monitor_count())</code></pre>
 
 <script>
     const switchButton = document.getElementById("lang-switch");
+    const langIcon = document.getElementById("lang-icon");
+
     let currentLang = "🇫🇷";
 
     switchButton.addEventListener("click", () => {
@@ -91,10 +93,19 @@ print(display.get_monitor_count())</code></pre>
             el.classList.toggle("hidden", el.dataset.lang !== currentLang);
         });
 
-        switchButton.textContent = currentLang.toUpperCase();
-        document.documentElement.lang = currentLang;
+        // Changer l’icône
+        if (currentLang === "🇫🇷") {
+            langIcon.src = "./images/French.png";
+            langIcon.alt = "🇫🇷";
+            document.documentElement.lang = "fr";
+        } else {
+            langIcon.src = "./images/English.png";
+            langIcon.alt = "🇬🇧";
+            document.documentElement.lang = "en";
+        }
     });
 </script>
+
 
 </body>
 </html>
