@@ -25,6 +25,32 @@
     background-color: #2a2f45;
 }
 
+/* Lang-button */
+.lang-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #1a1d23;
+    border: 1px solid #2f3549;
+    border-radius: 6px;
+
+    width: 42px;
+    height: 42px;
+
+    cursor: pointer;
+}
+
+.lang-button:hover {
+    background-color: #2a2f45;
+}
+
+.lang-button img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
 /* GitHub Logo */
 .icon-button {
     display: flex;
@@ -48,6 +74,6 @@
 .icon-button img {
     width: 70%;
     height: 70%;
-    /*object-fit: contain;*/
+    object-fit: contain;
 }
 
