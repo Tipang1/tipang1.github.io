@@ -22,11 +22,11 @@ function toggle_hidden() {
 function update_button() {
     // Changer l’icône
     if (currentLang === "fr") {
-        langIcon.src = "../images/French.png";
+        langIcon.src = "https://tipang1.github.io/Projets/images/French.png";
         langIcon.alt = "🇫🇷";
         document.documentElement.lang = "fr";
     } else {
-        langIcon.src = "../images/English.png";
+        langIcon.src = "https://tipang1.github.io/Projets/images/English.png";
         langIcon.alt = "🇬🇧";
         document.documentElement.lang = "en";
     }
