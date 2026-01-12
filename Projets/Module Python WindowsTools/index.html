@@ -75,77 +75,78 @@ print(display.get_monitor_count())</code></pre>
 SystemManager.Volume.set_volume(50)</code></pre>
 
 
-    <h2>DisplayInfo</h2>
+    <div class="module display">
+        <h2>DisplayInfo</h2>
 
-    <p>
-        Le module <strong>DisplayInfo</strong> permet de récupérer des informations
-        sur les écrans et moniteurs connectés au système.
-    </p>
+        <p>
+            Le module <strong>DisplayInfo</strong> permet de récupérer des informations
+            sur les écrans et moniteurs connectés au système.
+        </p>
 
-    <h3>Méthodes</h3>
+        <h3>Méthodes</h3>
 
-    <h4>get_monitor_count()</h4>
-    <p>Retourne le nombre d’écrans actuellement connectés.</p>
-    <pre><code>display.get_monitor_count()</code></pre>
+        <h4>get_monitor_count()</h4>
+        <p>Retourne le nombre d’écrans actuellement connectés.</p>
+        <pre><code>display.get_monitor_count()</code></pre>
 
-    <h4>get_primary_monitor()</h4>
-    <p>Retourne l’index de l’écran principal.</p>
-    <pre><code>display.get_primary_monitor()</code></pre>
+        <h4>get_primary_monitor()</h4>
+        <p>Retourne l’index de l’écran principal.</p>
+        <pre><code>display.get_primary_monitor()</code></pre>
 
-    <h4>get_all_monitors_info()</h4>
-    <p>Retourne une liste contenant les informations de chaque moniteur connecté.</p>
-    <pre><code>display.get_all_monitors_info()</code></pre>
-    <div class="note">
-        Les informations retournées incluent la position, la résolution,
-        les limites de l’écran et son statut (principal ou non).
+        <h4>get_all_monitors_info()</h4>
+        <p>Retourne une liste contenant les informations de chaque moniteur connecté.</p>
+        <pre><code>display.get_all_monitors_info()</code></pre>
+        <div class="note">
+            Les informations retournées incluent la position, la résolution,
+            les limites de l’écran et son statut (principal ou non).
+        </div>
+
+        <h4>get_monitor_info(index)</h4>
+        <p>Retourne les informations d’un écran spécifique.</p>
+        <pre><code>display.get_monitor_info(0)</code></pre>
+        <div class="note">
+            Comme pour <code>get_all_monitors_info()</code>, les informations retournées incluent la position, la résolution,
+            les limites de l’écran et son statut (principal ou non).
+        </div>
+
+        <h4>is_primary(index)</h4>
+        <p>Indique si l’écran donné est l’écran principal.</p>
+        <pre><code>display.is_primary(0)</code></pre>
+
+        <h4>refresh()</h4>
+        <p>Recharge la liste des écrans connectés.</p>
+        <pre><code>display.refresh()</code></pre>
     </div>
 
-    <h4>get_monitor_info(index)</h4>
-    <p>Retourne les informations d’un écran spécifique.</p>
-    <pre><code>display.get_monitor_info(0)</code></pre>
-    <div class="note">
-        Comme pour <code>get_all_monitors_info()</code>, les informations retournées incluent la position, la résolution,
-        les limites de l’écran et son statut (principal ou non).
+    <div class="module wallpaper">
+        <h2>WallpaperManager</h2>
+
+        <p>
+            Le module <strong>WallpaperManager</strong> permet de gérer le fond d’écran
+            Windows, globalement ou par moniteur.
+        </p>
+
+        <h3>Fonctionnalités</h3>
+
+        <ul>
+            <li>Changer le fond d’écran global</li>
+            <li>Définir un fond d’écran par écran (selon la version de Windows)</li>
+        </ul>
+
+        <h3>Méthodes</h3>
+
+        <h4>set_global_wallpaper(path)</h4>
+        <p>
+            Définit un fond d’écran unique pour tous les moniteurs.
+        </p>
+
+        <pre><code>WallpaperManager.set_global_wallpaper("wallpaper.jpg")</code></pre>
+
+        <div class="warning">
+            La gestion du fond d’écran par moniteur peut dépendre de la version
+            de Windows et des permissions utilisateur.
+        </div>
     </div>
-
-    <h4>is_primary(index)</h4>
-    <p>Indique si l’écran donné est l’écran principal.</p>
-    <pre><code>display.is_primary(0)</code></pre>
-
-    <h4>refresh()</h4>
-    <p>Recharge la liste des écrans connectés.</p>
-    <pre><code>display.refresh()</code></pre>
-
-
-
-    <h2>WallpaperManager</h2>
-
-    <p>
-        Le module <strong>WallpaperManager</strong> permet de gérer le fond d’écran
-        Windows, globalement ou par moniteur.
-    </p>
-
-    <h3>Fonctionnalités</h3>
-
-    <ul>
-        <li>Changer le fond d’écran global</li>
-        <li>Définir un fond d’écran par écran (selon la version de Windows)</li>
-    </ul>
-
-    <h3>Méthodes</h3>
-
-    <h4>set_global_wallpaper(path)</h4>
-    <p>
-        Définit un fond d’écran unique pour tous les moniteurs.
-    </p>
-
-    <pre><code>WallpaperManager.set_global_wallpaper("wallpaper.jpg")</code></pre>
-
-    <div class="warning">
-        La gestion du fond d’écran par moniteur peut dépendre de la version
-        de Windows et des permissions utilisateur.
-    </div>
-
 
     <h2>UselessClass</h2>
 
