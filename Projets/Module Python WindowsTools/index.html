@@ -78,13 +78,14 @@ SystemManager.Volume.set_volume(50)</code></pre>
     <h2>DisplayInfo</h2>
 
     <p>
-        Gestion des écrans et moniteurs connectés.
+        Le module <strong>DisplayInfo</strong> permet de récupérer des informations
+        sur les écrans et moniteurs connectés au système.
     </p>
 
     <h3>Méthodes</h3>
 
     <h4>get_monitor_count()</h4>
-    <p>Retourne le nombre d’écrans connectés.</p>
+    <p>Retourne le nombre d’écrans actuellement connectés.</p>
     <pre><code>display.get_monitor_count()</code></pre>
 
     <h4>get_primary_monitor()</h4>
@@ -92,8 +93,12 @@ SystemManager.Volume.set_volume(50)</code></pre>
     <pre><code>display.get_primary_monitor()</code></pre>
 
     <h4>get_all_monitors_info()</h4>
-    <p>Retourne les informations de tous les écrans.</p>
+    <p>Retourne une liste contenant les informations de chaque moniteur connecté.</p>
     <pre><code>display.get_all_monitors_info()</code></pre>
+    <div class="note">
+        Les informations retournées incluent la position, la résolution,
+        les limites de l’écran et son statut (principal ou non).
+    </div>
 
     <h4>get_monitor_info(index)</h4>
     <p>Retourne les informations d’un écran spécifique.</p>
