@@ -62,13 +62,18 @@
 
 
     <h2>Démarrage rapide</h2>
+
+    <p>Récupérer des informations sur les écrans :</p>
     <pre><code>from WindowsPyTools import DisplayInfo
 
 display = DisplayInfo()
 print(display.get_monitor_count())</code></pre>
-<pre><code>from WindowsPyTools import SystemManager
+
+    <p>Modifier le volume système :</p>
+    <pre><code>from WindowsPyTools import SystemManager
 
 SystemManager.Volume.set_volume(50)</code></pre>
+
 
     <h2>DisplayInfo</h2>
 
