@@ -35,42 +35,60 @@
 <div data-lang="fr" class="hidden">
     <h1>Nom du projet</h1>
 
-    <h2>Présentation</h2>
-    <p>
-        WindowsPyTools est une bibliothèque Python dédiée à l’accès
-        aux fonctionnalités natives de Windows (écrans, système, audio,
-        applications, notifications…).
-    </p>
-
-    <h2>Installation</h2>
-
-    <div class="note">
-        Compatible uniquement avec Windows.
+    <div>
+        <h2>Présentation</h2>
+        <p>
+            WindowsPyTools est une bibliothèque Python dédiée à l’accès
+            aux fonctionnalités natives de Windows (écrans, système, audio,
+            applications, notifications…).
+        </p>
     </div>
 
-    <pre><code>pip install windowspytools</code></pre>
+    <div>
+        <h2>État du projet</h2>
 
+        <p>
+            WindowsPyTools est actuellement en développement.
+            L’API peut évoluer et certaines fonctionnalités sont encore expérimentales.
+        </p>
 
+        <div class="note">
+            La documentation reflète l’état actuel du projet et peut être amenée
+            à évoluer en même temps que le code.
+        </div>
+    </div>
 
-    <h2>Objectifs</h2>
-    <ul>
-        <li>Fournir une API simple pour les fonctionnalités Windows</li>
-        <li>Ne dépendre que de la bibliothèque standard Python</li>
-        <li>Être installable et utilisable comme un module classique</li>
-        <li>Assumer une compatibilité Windows uniquement</li>
-    </ul>
+    <div>
+        <h2>Installation</h2>
 
+        <div class="note">
+            Compatible uniquement avec Windows.
+        </div>
 
-    <h2>Démarrage rapide</h2>
+        <pre><code>pip install windowspytools</code></pre>
+    </div>
 
-    <p>Récupérer des informations sur les écrans :</p>
-    <pre><code>from WindowsPyTools import DisplayInfo
+    <div>
+        <h2>Objectifs</h2>
+        <ul>
+            <li>Fournir une API simple pour les fonctionnalités Windows</li>
+            <li>Ne dépendre que de la bibliothèque standard Python</li>
+            <li>Être installable et utilisable comme un module classique</li>
+            <li>Assumer une compatibilité Windows uniquement</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Démarrage rapide</h2>
+
+        <p>Récupérer des informations sur les écrans :</p>
+        <pre><code>from WindowsPyTools import DisplayInfo
 
 display = DisplayInfo()
 print(display.get_monitor_count())</code></pre>
 
-    <p>Modifier le volume système :</p>
-    <pre><code>from WindowsPyTools import SystemManager
+        <p>Modifier le volume système :</p>
+        <pre><code>from WindowsPyTools import SystemManager
 
 SystemManager.Volume.set_volume(50)</code></pre>
 
@@ -157,18 +175,6 @@ SystemManager.Volume.set_volume(50)</code></pre>
     <div class="note">
         Ce module est volontairement inutile.
         Il sert d’exemple, de test… et de blague.
-    </div>
-
-    <h2>État du projet</h2>
-
-    <p>
-        WindowsPyTools est actuellement en développement.
-        L’API peut évoluer et certaines fonctionnalités sont encore expérimentales.
-    </p>
-
-    <div class="note">
-        La documentation reflète l’état actuel du projet et peut être amenée
-        à évoluer en même temps que le code.
     </div>
 
 
