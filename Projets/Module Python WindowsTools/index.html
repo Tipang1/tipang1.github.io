@@ -103,6 +103,10 @@ SystemManager.Volume.set_volume(50)</code></pre>
     <h4>get_monitor_info(index)</h4>
     <p>Retourne les informations d’un écran spécifique.</p>
     <pre><code>display.get_monitor_info(0)</code></pre>
+    <div class="note">
+        Comme pour <code>get_all_monitors_info()</code>, les informations retournées incluent la position, la résolution,
+        les limites de l’écran et son statut (principal ou non).
+    </div>
 
     <h4>is_primary(index)</h4>
     <p>Indique si l’écran donné est l’écran principal.</p>
