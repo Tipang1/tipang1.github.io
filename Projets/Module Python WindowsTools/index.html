@@ -121,13 +121,31 @@ SystemManager.Volume.set_volume(50)</code></pre>
     <h2>WallpaperManager</h2>
 
     <p>
-        Permet de définir le fond d’écran global ou par écran.
+        Le module <strong>WallpaperManager</strong> permet de gérer le fond d’écran
+        Windows, globalement ou par moniteur.
     </p>
-    <div class="warning">
 
-    La gestion par écran nécessite Windows 8+ et peut dépendre
-    des permissions utilisateur.
+    <h3>Fonctionnalités</h3>
+
+    <ul>
+        <li>Changer le fond d’écran global</li>
+        <li>Définir un fond d’écran par écran (selon la version de Windows)</li>
+    </ul>
+
+    <h3>Méthodes</h3>
+
+    <h4>set_global_wallpaper(path)</h4>
+    <p>
+        Définit un fond d’écran unique pour tous les moniteurs.
+    </p>
+
+    <pre><code>WallpaperManager.set_global_wallpaper("wallpaper.jpg")</code></pre>
+
+    <div class="warning">
+        La gestion du fond d’écran par moniteur peut dépendre de la version
+        de Windows et des permissions utilisateur.
     </div>
+
 
     <h2>UselessClass</h2>
 
