@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nom du projet</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/topbar.css">
+    <link rel="stylesheet" href="./css/tooltips.css">
+</head>
+<body>
+
+<!-- 🔝 Top right controls -->
+<div class="topbar">
+    <button class="lang-button tooltip" id="lang-switch" data-tooltip="FR / EN">
+        <img id="lang-icon" src="./images/French.png" alt="🇫🇷">
+    </button>
+
+    <a class="icon-button tooltip"
+        href="https://github.com/USER/REPO"
+        target="_blank"
+        data-tooltip="View on GitHub">
+          <img src="./images/GitHub Logo.png" alt="GitHub">
+    </a>
+
+    <a class="icon-button tooltip"
+        href="https://github.com/USER/REPO/releases/latest"
+        target="_blank"
+        data-tooltip="Download latest">
+        <img src="./images/Download.png" class="reversed-color">
+    </a>
+</div>
+
+<!-- 🇫🇷 FR -->
+<div data-lang="fr">
+    <h1>Nom du projet</h1>
+
+    <h2>Présentation</h2>
+    <p>
+        WindowsPyTools est une bibliothèque Python dédiée à l’accès
+        aux fonctionnalités natives de Windows (écrans, système, audio,
+        applications, notifications…).
+    </p>
+
+
+    <h2>Objectifs</h2>
+    <ul>
+        <li>Objectif 1</li>
+        <li>Objectif 2</li>
+        <li>Objectif 3</li>
+        <li>Objectif 4</li>
+    </ul>
+
+    <h2>Démarrage rapide</h2>
+
+    <div class="note">
+        Note
+    </div>
+    <div class="warning">
+        Avertissement
+    </div>
+    <pre><code>Exemple court</code></pre>
+</div>
+
+<!-- 🇬🇧 EN -->
+<div data-lang="en" class="hidden">
+    <h1>Project name</h1>
+
+    <p>
+        Short description
+    </p>
+
+    <h2>Goals</h2>
+    <ul>
+        <li>Goal 1</li>
+        <li>Goal 2</li>
+        <li>Goal 3</li>
+        <li>Goal 4</li>
+    </ul>
+
+    <h2>Quick start</h2>
+
+    <div class="note">
+        Note
+    </div>
+    <div class="warning">
+        Warning
+    </div>
+    <pre><code>Short example</code></pre>
+</div>
+
+
+<script src="./change-language.js" defer></script>
+
+</body>
+</html>
