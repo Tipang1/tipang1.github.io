@@ -48,14 +48,3 @@ a {
 .reversed-color {
     filter: invert(1);
 }
-
-
-section#DisplayInfo {
-    border-left: 3px solid #7aa2f7;
-    padding-left: 16px;
-}
-
-section#WallpaperManager {
-    border-left: 3px solid #f7768e;
-    padding-left: 16px;
-}

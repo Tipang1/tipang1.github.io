@@ -1,0 +1,9 @@
+section.module#DisplayInfo {
+    border-left: 3px solid #7aa2f7;
+    padding-left: 16px;
+}
+
+section.module#WallpaperManager {
+    border-left: 3px solid #f7768e;
+    padding-left: 16px;
+}
