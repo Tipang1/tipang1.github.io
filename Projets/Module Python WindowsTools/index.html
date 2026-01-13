@@ -155,7 +155,7 @@ SystemManager.Volume.set_volume(50)</code></pre>
 
         <ul>
             <li>Changer le fond d’écran global</li>
-            <li>Définir un fond d’écran par écran (selon la version de Windows)</li>
+            <li>Définir un fond d’écran par moniteur (selon la version de Windows)</li>
         </ul>
 
         <h3>Méthodes</h3>
@@ -208,6 +208,136 @@ SystemManager.Volume.set_volume(50)</code></pre>
                 applications, notifications…).
             </p>
         </section>
+
+        <section id="State">
+            <h2>Project status</h2>
+
+            <p>
+                WindowsPyTools is currently under development.
+                The API may change and some features are still experimental.
+            </p>
+
+            <div class="note">
+                The documentation reflects the current state of the project
+                and may evolve alongside the code.
+            </div>
+        </section>
+
+        <section id="Installation">
+            <h2>Installation</h2>
+
+            <div class="note">
+                Compatible with Windows only.
+            </div>
+
+            <pre><code>pip install windowspytools</code></pre>
+        </section>
+
+        <section id="Goals">
+            <h2>Goals</h2>
+            <ul>
+                <li>Provide a simple API for Windows features</li>
+                <li>Rely only on the Python standard library</li>
+                <li>Be installable and usable like a regular Python module</li>
+                <li>Explicitly target Windows-only compatibility</li>
+            </ul>
+        </section>
+    </section>
+
+    <section id="QuickStart">
+        <h2>Quick start</h2>
+
+        <p>Retrieve information about connected displays:</p>
+        <pre><code>from WindowsPyTools import DisplayInfo
+
+display = DisplayInfo()
+print(display.get_monitor_count())</code></pre>
+
+        <p>Change the system volume:</p>
+        <pre><code>from WindowsPyTools import SystemManager
+
+SystemManager.Volume.set_volume(50)</code></pre>
+    </section>
+
+    <section id="DisplayInfo">
+        <h2>DisplayInfo</h2>
+
+        <p>
+            The <strong>DisplayInfo</strong> module allows you to retrieve information
+            about displays and monitors connected to the system.
+        </p>
+
+        <h3>Methods</h3>
+
+        <h4>get_monitor_count()</h4>
+        <p>Returns the number of currently connected displays.</p>
+        <pre><code>display.get_monitor_count()</code></pre>
+
+        <h4>get_primary_monitor()</h4>
+        <p>Returns the index of the primary display.</p>
+        <pre><code>display.get_primary_monitor()</code></pre>
+
+        <h4>get_all_monitors_info()</h4>
+        <p>Returns a list containing information about each connected monitor.</p>
+        <pre><code>display.get_all_monitors_info()</code></pre>
+        <div class="note">
+            The returned information includes position, resolution,
+            screen bounds, and whether the monitor is primary or not.
+        </div>
+
+        <h4>get_monitor_info(index)</h4>
+        <p>Returns information about a specific display.</p>
+        <pre><code>display.get_monitor_info(0)</code></pre>
+        <div class="note">
+            As with <code>get_all_monitors_info()</code>, the returned information includes
+            position, resolution, screen bounds, and primary status.
+        </div>
+
+        <h4>is_primary(index)</h4>
+        <p>Indicates whether the given display is the primary one.</p>
+        <pre><code>display.is_primary(0)</code></pre>
+
+        <h4>refresh()</h4>
+        <p>Reloads the list of connected displays.</p>
+        <pre><code>display.refresh()</code></pre>
+    </section>
+
+    <section id="WallpaperManager">
+        <h2>WallpaperManager</h2>
+
+        <p>
+            The <strong>WallpaperManager</strong> module allows you to manage the Windows
+            desktop wallpaper, either globally or per monitor.
+        </p>
+
+        <h3>Features</h3>
+
+        <ul>
+            <li>Change the global desktop wallpaper</li>
+            <li>Set a different wallpaper for each monitor (depending on Windows version)</li>
+        </ul>
+
+        <h3>Methods</h3>
+
+        <h4>set_global_wallpaper(path)</h4>
+        <p>
+            Sets a single wallpaper for all connected monitors.
+        </p>
+
+        <pre><code>WallpaperManager.set_global_wallpaper("wallpaper.jpg")</code></pre>
+
+        <h4>set_wallpaper_per_monitor([(index, path), ...])</h4>
+        <div class="warning">
+            Per-monitor wallpaper management may depend on the Windows version
+            and user permissions.
+        </div>
+        <p>
+            Sets a specific wallpaper for each monitor independently.
+        </p>
+
+        <pre><code>WallpaperManager.set_wallpaper_per_monitor(
+    [(0, "wallpaper1.png"), (2, "wallpaper3.jpeg")]
+)</code></pre>
     </section>
 </div>
 
