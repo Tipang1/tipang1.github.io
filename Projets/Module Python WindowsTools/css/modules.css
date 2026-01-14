@@ -4,9 +4,12 @@
     --SystemManager-color: #4CAF50;
 }
 
-section.module#DisplayInfo {
-    border-left: 3px solid var(--SystemManager-color);
+section.module {
     padding-left: 16px;
+}
+
+section.module#DisplayInfo {
+    border-left: 3px solid var(--DisplayInfo-color);
 }
 
 section.module#DisplayInfo h2 {
@@ -14,8 +17,13 @@ section.module#DisplayInfo h2 {
 }
 
 section.module#WallpaperManager {
-    border-left: 3px solid #3fa36f;
-    padding-left: 16px;
+    border-left: 3px solid var(--WallpaperManager-color);
 }
 
+section.module#WallpaperManager h2 {
+    color: var(--WallpaperManager-color);
+}
 
+section.module#SystemManager {
+    border-left: 3px solid var(--SystemManager-color);
+}

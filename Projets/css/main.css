@@ -1,9 +1,12 @@
 :root {
     --notes-color: #7aa2f7;
     --notes-background-color: #1f2330;
-    
+
     --warnings-color: #f7768e;
     --warnings-background-color: #2a1f1f;
+
+    --great-color: #3fa36f;
+    --great-background-color: #11eb6463;
 }
 
 body {
@@ -45,6 +48,13 @@ a {
 .warning {
     background-color: var(--warnings-background-color);
     border-left: 4px solid var(--warnings-color);
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.great {
+    background-color: var(--great-background-color);
+    border-left: 4px solid var(--great-color);
     padding: 10px;
     margin: 20px 0;
 }
