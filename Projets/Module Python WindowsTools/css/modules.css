@@ -14,7 +14,7 @@ section.module#DisplayInfo h2 {
 }
 
 section.module#WallpaperManager {
-    border-left: 3px solid var(--WallpaperManager-color);
+    border-left: 3px solid #3fa36f;
     padding-left: 16px;
 }
 
