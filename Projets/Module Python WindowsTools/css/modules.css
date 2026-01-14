@@ -27,3 +27,7 @@ section.module#WallpaperManager h2 {
 section.module#SystemManager {
     border-left: 3px solid var(--SystemManager-color);
 }
+
+section.module#SystemManager h2 {
+    color: var(--SystemManager-color)
+}
