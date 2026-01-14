@@ -1,7 +1,8 @@
 :root {
     --DisplayInfo-color: #3f7fd1;
     --WallpaperManager-color: #c04b4b;
-    --SystemManager-color: #4CAF50;
+    /*--SystemManager-color: #4CAF50;*/
+    --SystemManager-color: #43a047;
 }
 
 section.module {

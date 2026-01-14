@@ -179,14 +179,57 @@ SystemManager.Volume.set_volume(50)</code></pre>
 )</code></pre>
     </section>
 
+    <section class="module" id="SystemManager">
+        <h2>SystemManager</h2>
+
+        <p>
+            The <strong>SystemManager</strong> module provides access to various
+            Windows system-level features such as volume control, power management,
+            and system state information.
+        </p>
+
+        <h3>Features</h3>
+
+        <ul>
+            <li>Control system volume</li>
+            <li>Access system-related settings</li>
+            <li>Interact with native Windows system components</li>
+        </ul>
+        
+        <h3>Submodules</h3>
+
+        <h4>Volume</h4>
+        <p>
+            The <strong>Volume</strong> submodule allows you to control the system
+            audio volume.
+        </p>
+        
+        <h5>set_volume(value)</h5>
+        <p>
+            Sets the system master volume.
+            The value must be between <code>0</code> and <code>100</code>.
+        </p>
+
+        <pre><code>from WindowsPyTools import SystemManager
+
+SystemManager.Volume.set_volume(20)</code></pre>
+
+        <div class="note">
+            Volume changes affect the global system volume.
+        </div>
+    </section>
+
     <section id="UselessClass">
         <h2>UselessClass</h2>
+
+        Les méthodes
 
         <div class="great">
             Ce module est volontairement inutile.
         </div>
         <!-- Il sert d’exemple, de test… et de blague. -->
-         
+
+
     </section>
     <footer>
         <p>
