@@ -1,9 +1,21 @@
+:root {
+    --DisplayInfo-color: #3f7fd1;
+    --WallpaperManager-color: #c04b4b;
+    --SystemManager-color: #4CAF50;
+}
+
 section.module#DisplayInfo {
-    border-left: 3px solid #7aa2f7;
+    border-left: 3px solid var(--SystemManager-color);
     padding-left: 16px;
 }
 
+section.module#DisplayInfo h2 {
+    color: var(--DisplayInfo-color);
+}
+
 section.module#WallpaperManager {
-    border-left: 3px solid #f7768e;
+    border-left: 3px solid var(--WallpaperManager-color);
     padding-left: 16px;
 }
+
+
