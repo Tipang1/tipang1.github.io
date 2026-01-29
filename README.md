@@ -4,5 +4,5 @@ Je suis un dev qui travaille principalement en Python. Je code ce que j'ai envie
 ## Mes projets
 <br>[Utilitaire pour le jeu de rôle Insectopia → Blattes](https://github.com/Tipang1/Blattes)
 <br>[Talk-Code → Langage de programmation "naturel"](./) (⚠ arrivera bientôt 🚧)
-<br>[Module Python → WindowsTools](./Projets/Module Python WindowsTools/) (⚠ documentation incomplète, en cours de création... 🚧)
+<br>[Module Python → WindowsTools](./Projets/Module Python WindowsTools/) (⚠ documentation en cours de création... 🚧)
 <hr>
