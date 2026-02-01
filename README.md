@@ -6,5 +6,5 @@ Je suis un dev qui travaille principalement en Python. Je code ce que j'ai envie
 <br>[Talk-Code → Langage de programmation "naturel"](./) (⚠ arrivera bientôt 🚧)
 <br>[Module Python → WindowsTools](./Projets/Module Python WindowsTools/) (⚠ documentation en cours de création... 🚧)
 ### 1 mois 1 app
-[Janvier 2026 : Vaultiq  Gestionnaire de mots de passe hors ligne](./Projets/Vaultiq/)
+<br>[Janvier 2026 : Vaultiq → Gestionnaire de mots de passe hors ligne](./Projets/Vaultiq/)
 <hr>
